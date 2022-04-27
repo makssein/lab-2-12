@@ -1,7 +1,7 @@
 #include <iostream>
 #include <memory>
 #include <vector>
-//#define MY_DEBUG
+#define MY_DEBUG
 
 class teacher;
 class student{
