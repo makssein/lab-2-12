@@ -18,13 +18,13 @@ public:
 #endif
     }
 
-    const std::shared_ptr<teacher> getTeacher() { return m_teacher; }
+    const std::weak_ptr<teacher> getTeacher() { return m_teacher; }
     const std::string& getName() const { return m_studentName; }
     friend void addStudentToTeacher(std::shared_ptr<teacher>& Teacher, std::shared_ptr<student>& Student);
 
 private:
     std::string m_studentName;
-    std::shared_ptr<teacher> m_teacher;
+    std::weak_ptr<teacher> m_teacher;
 };
 
 class teacher{
