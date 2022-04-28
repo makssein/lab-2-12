@@ -49,9 +49,8 @@ public:
             for (auto const &student: m_students)
                 std::cout << student->getName() << std::endl;
         }
-        else{
+        else
             std::cout << "Teacher " + m_teacherName + " has no students" << std::endl;
-        }
     }
 
     const std::string& getName() const { return m_teacherName; }
@@ -68,20 +67,3 @@ void addStudentToTeacher(std::shared_ptr<teacher>& Teacher, std::shared_ptr<stud
     Student->m_teacher = Teacher;
     Teacher->addStudent(Student);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

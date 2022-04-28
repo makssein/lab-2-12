@@ -8,5 +8,6 @@ int main() {
     addStudentToTeacher(Teacher, Student_2);
 
     Teacher->getAllStudents();
+
     return 0;
 }
